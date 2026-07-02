@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Details - Simple E-Commerce Store</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="main-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">Store</a>
+      <nav class="main-nav">
+        <a href="products.html">Shop</a>
+        <a href="cart.html">Cart</a>
+        <a href="profile.html">Profile</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page-content">
+    <section class="product-detail-grid">
+      <div class="product-detail-image">
+        <img id="product-image" src="" alt="Product" />
+      </div>
+      <div class="product-detail-info">
+        <h1 id="product-name"></h1>
+        <p id="product-category" class="product-category"></p>
+        <p id="product-description"></p>
+        <div class="price-block">
+          <span class="price-label">Price:</span>
+          <span id="product-price" class="price-value"></span>
+        </div>
+        <div class="product-actions">
+          <label for="product-quantity">Quantity</label>
+          <input type="number" id="product-quantity" min="1" value="1" />
+          <button id="add-to-cart" class="btn btn-primary">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Simple E-Commerce Store © Darshu ,2026-27</p>
+    </div>
+  </footer>
+  <script src="js/product-details.js"></script>
+</body>
+</html>

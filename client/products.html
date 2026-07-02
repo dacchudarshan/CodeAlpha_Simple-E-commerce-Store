@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products - Simple E-Commerce Store</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="main-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">Store</a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="cart.html">Cart</a>
+        <a href="profile.html">Profile</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page-content">
+    <section class="products-hero">
+      <div>
+        <h1>Products</h1>
+        <p>Browse our product catalog and click any item for details.</p>
+      </div>
+    </section>
+    <section class="filter-bar">
+      <input id="search-input" type="search" placeholder="Search products..." />
+      <select id="category-filter" onchange="filterProducts()">
+        <option>All</option>
+      </select>
+    </section>
+    <section id="product-list" class="products-grid"></section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Simple E-Commerce Store © Darshu ,2026-27</p>
+    </div>
+  </footer>
+  <script src="js/products.js"></script>
+</body>
+</html>

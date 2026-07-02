@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cart - Simple E-Commerce Store</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="main-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">Store</a>
+      <nav class="main-nav">
+        <a href="products.html">Shop</a>
+        <a href="profile.html">Profile</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page-content">
+    <section class="cart-page">
+      <h1>Your Shopping Cart</h1>
+      <div id="cart-empty" class="cart-empty">Your cart is empty.</div>
+      <div id="cart-items" class="cart-items"></div>
+      <div id="cart-summary" class="cart-summary hidden">
+        <h2>Order Summary</h2>
+        <p>Items total: <span id="cart-items-price">₹0.00</span></p>
+        <p>Shipping: <span id="cart-shipping-price">₹0.00</span></p>
+        <p>Tax: <span id="cart-tax-price">₹0.00</span></p>
+        <p class="summary-total">Total: <span id="cart-total-price">₹0.00</span></p>
+        <a href="checkout.html" class="btn btn-primary">Proceed to Checkout</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Simple E-Commerce Store © Darshu ,2026-27</p>
+    </div>
+  </footer>
+  <script src="js/cart.js"></script>
+</body>
+</html>
